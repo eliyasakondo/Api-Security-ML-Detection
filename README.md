@@ -32,7 +32,7 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 # Clone this repository
-git clone https://github.com/yourusername/api-security-ml-detection.git
+git clone https://github.com/eliyasakondo/api-security-ml-detection.git
 
 # Navigate to project directory
 cd api-security-ml-detection
