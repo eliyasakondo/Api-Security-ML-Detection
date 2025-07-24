@@ -32,10 +32,10 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 # Clone this repository
-git clone https://github.com/eliyasakondo/api-security-ml-detection.git
+git clone https://github.com/eliyasakondo/Api-Security-ML-Detection.git
 
 # Navigate to project directory
-cd api-security-ml-detection
+cd Api-Security-ML-Detection
 ```
 
 ### Step 2: Create Virtual Environment
@@ -109,7 +109,7 @@ python attack_simulator.py
 ## 📁 Project Structure
 
 ```
-api-security-ml-detection/
+Api-Security-ML-Detection/
 ├── 📄 simple_app.py          # Main API with security protection
 ├── 📊 dashboard.py           # Real-time security dashboard
 ├── 🧪 attack_simulator.py    # Comprehensive attack testing tool
