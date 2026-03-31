@@ -40,13 +40,27 @@ cd Api-Security-ML-Detection
 
 ### Step 2: Create Virtual Environment
 
-**For Windows:**
-```bash
-# Create virtual environment
-python -m venv .venv
+> **Windows note:** activation commands depend on the shell you use (Command Prompt, PowerShell, or Git Bash).
 
-# Activate virtual environment
+#### Windows (Command Prompt / cmd.exe)
+
+```cmd
+python -m venv .venv
 .venv\Scripts\activate
+```
+
+#### Windows (PowerShell)
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+#### Windows (Git Bash)
+
+```bash
+python -m venv .venv
+source .venv/Scripts/activate
 ```
 
 **For macOS/Linux:**
@@ -70,13 +84,13 @@ pip install -r requirements.txt
 #### Option A: Using Batch Files (Windows)
 
 1. **Start Dashboard** (First Terminal):
-   ```bash
+   ```cmd
    # Double-click start_dashboard.bat or run:
    start_dashboard.bat
    ```
 
 2. **Start API** (Second Terminal):
-   ```bash
+   ```cmd
    # Double-click start_api.bat or run:
    start_api.bat
    ```
@@ -202,12 +216,32 @@ taskkill /PID <process_id> /F
 ```bash
 # Error: ModuleNotFoundError
 # Solution: Ensure virtual environment is activated
-.venv\Scripts\activate  # Windows
-source .venv/bin/activate  # macOS/Linux
+# Windows (Command Prompt)
+.venv\Scripts\activate
+
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Windows (Git Bash)
+source .venv/Scripts/activate
+
+# macOS/Linux
+source .venv/bin/activate
+
 pip install -r requirements.txt
 ```
 
-**3. Python Version Issues**
+**3. `bash: .venvScriptsactivate: command not found` (Git Bash)**
+
+This happens when you run a Windows-style activate command in Git Bash.
+
+Use:
+
+```bash
+source .venv/Scripts/activate
+```
+
+**4. Python Version Issues**
 ```bash
 # Check Python version
 python --version
